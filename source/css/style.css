@@ -44,6 +44,12 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .section-title h2 {
+    font-size: 24px;
+  }
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -921,12 +927,12 @@ body {
 .call-to-action {
   padding: 50px 0;
   background-image: url(https://templates.envytheme.com/promedi/default/assets/img/slider/1.jpg);
-  background-position: center center;
   background-size: cover;
+  background-position: center center;
+  position: relative;
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 50px 0;
-  position: relative;
 }
 
 .call-to-action:hover .call-text i {
@@ -977,8 +983,8 @@ body {
 
 .call-to-action .default-btn:hover {
   background-color: #333333;
-  border-color: #333333;
   color: #ffffff;
+  border-color: #333333;
 }
 
 @media only screen and (min-width: 340px) and (max-width: 991px) {
@@ -1338,9 +1344,9 @@ body {
 
 .form .contact-img {
   background-image: url(https://templates.envytheme.com/promedi/default/assets/img/appointment-left-bg.jpg);
+  height: 645px;
   background-size: cover;
   background-position: center center;
-  height: 645px;
   position: relative;
 }
 
@@ -1436,7 +1442,7 @@ body {
   position: absolute;
   left: -20px;
   top: 50%;
-  background: #eeeeee !important;
+  background: #ffffff !important;
   color: #396cf0 !important;
   border-radius: 50% !important;
   width: 50px;
@@ -1699,14 +1705,14 @@ body {
   border-color: #ffffff;
 }
 
-.section-news .owl-carousel .single-card:hover .caption-text > h3 {
+.section-news .owl-carousel .single-card:hover .caption-text h3 {
   color: #396cf0;
 }
 
 .newsletter {
   background-image: url("https://templates.envytheme.com/promedi/default/assets/img/newsletter-bg.jpg");
-  background-position: center center;
   background-size: cover;
+  background-position: center center;
   position: relative;
   -webkit-clip-path: polygon(21% 0, 100% 8%, 100% 100%, 50% 100%, 0 100%, 0 9%);
           clip-path: polygon(21% 0, 100% 8%, 100% 100%, 50% 100%, 0 100%, 0 9%);
@@ -1925,10 +1931,10 @@ footer .line {
 
 .page-title {
   background-image: url(https://templates.envytheme.com/promedi/default/assets/img/slider/1.jpg);
-  background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
+  background-repeat: no-repeat;
   padding-top: 245px;
   padding-bottom: 60px;
 }
@@ -1979,6 +1985,24 @@ footer .line {
 
 .page-title ul a {
   color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  .page-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .page-title ul {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .page-title ul li {
+    font-size: 15px;
+  }
+  .page-title h2 {
+    font-size: 25px;
+  }
 }
 
 .welcome .single-box {
@@ -2103,7 +2127,7 @@ footer .line {
 }
 
 .side-bar .search-box form .form-control {
-  border: 1px solid #eee;
+  border: 1px solid #eeeeee;
 }
 
 .side-bar .search-box form .default-btn {
@@ -2361,6 +2385,24 @@ footer .line {
 .services .service-little:hover .icon::before {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+@media only screen and (max-width: 767px) {
+  .services .service-little {
+    padding: 20px 15px;
+    display: block;
+  }
+  .services .service-little .icon {
+    width: 65px;
+    height: 66px;
+    line-height: 63px;
+    font-size: 25px;
+  }
+  .services .service-little h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 .top-btn {

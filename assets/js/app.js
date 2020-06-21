@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $(".loader").fadeOut(300);
+  $(".loader").fadeOut(2000);
 
 
   $('.footer-load').load('_footer.html');
@@ -46,29 +46,7 @@ $(document).ready(function () {
   });
 
 
-  $('.doctor-carousel').owlCarousel({
-    loop: true,
-    margin: 30,
-    navText: [
-      "<i class='fas fa-arrow-left'></i>",
-      "<i class='fas fa-arrow-right'></i>"
-    ],
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true
-      },
-      600: {
-        items: 2,
-        nav: true
-      },
-      1000: {
-        items: 3,
-        nav: true
-      }
-    }
-  });
+ 
 
 
   $.ajax({
@@ -102,18 +80,41 @@ $(document).ready(function () {
            </div>
        </div>`;
 
-        $(item).html(doctorInner);
-        $('#owl').find('.owl-item').append(item);
-
+$(item).html(doctorInner);
+$('.doctor-carousel').append(item);
       });
     },
     error: function (response) {
       console.log('ERROR >> ', response);
     }
 
-
-
+  })
+.done(()=>{
+  $('.doctor-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    autoplay: true,
+    navText: [
+      "<i class='fas fa-arrow-left'></i>",
+      "<i class='fas fa-arrow-right'></i>"
+    ],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      600: {
+        items: 2,
+        nav: true
+      },
+      1000: {
+        items: 3,
+        nav: true
+      }
+    }
   });
+})
 
 
   $('.datepicker').datepicker();

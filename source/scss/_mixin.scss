@@ -1,0 +1,13 @@
+@mixin hover($baccol, $col) {
+    background-color: $baccol;
+    color: $col;
+}
+
+@mixin bac-pos() {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+$hovercolor : #333333;
+$whitecolor : #ffffff;
