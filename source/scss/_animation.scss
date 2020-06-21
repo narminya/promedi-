@@ -1,0 +1,139 @@
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+ 
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+
+ 
+@keyframes toTopFromBottom {
+    0% {
+       opacity: 1;
+       top: 10%;
+      //  color: #ffffff;
+    }
+ 
+    10% {
+       opacity: .8;
+       top: 15%;
+      //  color: #ffffff;
+    }
+ 
+    20% {
+       opacity: .7;
+       top: 20%;
+      //  color: #ffffff;
+    }
+ 
+    30% {
+       opacity: .6;
+       top: 25%;
+      //  color: #ffffff;
+    }
+ 
+    40% {
+       opacity: .5;
+       top: 30%;
+      //  color: #ffffff;
+    }
+ 
+    50% {
+       opacity: .4;
+       top: 40%;
+       color: #ffffff;
+    }
+ 
+    60% {
+       opacity: .2;
+       top: -40%;
+    }
+ 
+    70% {
+       opacity: .4;
+       top: -30%;
+    }
+ 
+    80% {
+       opacity: .6;
+       top: -25%;
+    }
+ 
+    90% {
+       opacity: .8;
+       top: -20%;
+    }
+ 
+    100% {
+       opacity: 1;
+       top: 0%;
+    }
+ }
+ 
+ 
+ 
+ .pulse {
+    margin: 100px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #cca92c;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+ 
+ }
+ 
+ .pulse:hover {
+    animation: none;
+ }
+ 
+ 
+ @keyframes pulse {
+    0% {
+       transform: scale(1);
+       box-shadow: 0 0 0 0 #fdbd34bb;
+    }
+ 
+    70% {
+       transform: scale(1);
+       box-shadow: 0 0 0 150px #fdbe3400;
+    }
+ 
+    100% {
+       transform: scale(1);
+       box-shadow: 0 0 0 0 #fdbe3400;
+    }
+ }
+ 
+ 
+ @keyframes heart {
+    0% {
+ 
+       transform: scale(0.95);
+    }
+ 
+    5% {
+       transform: scale(1.1);
+    }
+ 
+    39% {
+       transform: scale(0.85);
+    }
+ 
+    45% {
+       transform: scale(1);
+    }
+ 
+    60% {
+       transform: scale(0.95);
+    }
+ 
+    100% {
+       transform: scale(0.9);
+    }
+ }

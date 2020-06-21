@@ -1,0 +1,285 @@
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.dep-pad {
+  padding: 100px 0 50px 0;
+}
+
+.p-100 {
+  padding: 100px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .pt-100 {
+    padding-top: 70px;
+  }
+
+  .dep-pad {
+    padding: 70px 0 40px 0;
+  }
+
+  .p-100 {
+    padding: 70px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .ptb-100 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .pt-100 {
+    padding-top: 45px;
+  }
+
+  .dep-pad {
+    padding: 45px 0 10px 0;
+  }
+
+  .p-100 {
+    padding: 45px 0;
+  }
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  transition: all .5s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+
+
+.default-btn {
+  background-color: #396cf0;
+  color: #ffffff;
+  display: inline-block;
+  border: 1px solid #396cf0;
+  cursor: pointer;
+  padding: 8px 30px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+  }
+
+}
+
+.form-control {
+  height: 45px;
+  border-color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.bg-blue {
+  background-color: #396cf0;
+}
+
+.ui-widget-header {
+  background-color: #777777 !important;
+}
+
+.owl-stage {
+  margin: 0 auto;
+}
+
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  p {
+    max-width: 700px;
+    margin: 0 auto 0;
+    width: 100%;
+  }
+
+
+  h2 {
+    margin-bottom: 44px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -25px;
+      width: 75px;
+      height: 3px;
+      margin: 0 auto;
+      background: #396cf0;
+      right: 0;
+      border-radius: 5px;
+    }
+  }
+}
+
+
+
+
+.single-card {
+  border: 1px solid #eeeeee;
+  transition: all 0.5s;
+  margin-bottom: 30px;
+
+  .thumb-img {
+    position: relative;
+
+    img {
+      width: 100%;
+      clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #396cf0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      left: 0;
+      top: 3px;
+      clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+      transition: .4s;
+    }
+  }
+
+  .caption-text {
+    padding: 30px 20px;
+
+    p {
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 20px;
+      transition: all 0.5s;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      display: flex;
+      margin: 20px 0;
+
+      li {
+        position: relative;
+        margin-right: 15px;
+        color: #666666;
+
+        &::before {
+          content: '';
+          background-color: #ebebeb;
+          width: 1px;
+          height: 15px;
+          position: absolute;
+          right: -10px;
+          top: 7px;
+        }
+
+        &.author {
+          padding-left: 40px;
+
+          img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+            width: 30px !important;
+            height: 30px;
+          }
+
+        }
+      }
+    }
+
+
+    a.read {
+      color: #396cf0;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 20px;
+      display: inline-block;
+      line-height: 16px;
+
+      &:hover {
+        i {
+          transition: all .5s;
+          padding-left: 5px;
+        }
+      }
+
+      i {
+        font-size: 13px;
+        margin-left: 3px;
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+    background: #ffffff;
+    border-color: #ffffff;
+
+    .caption-text>h3 {
+      color: #396cf0;
+
+    }
+
+  }
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+
+}
